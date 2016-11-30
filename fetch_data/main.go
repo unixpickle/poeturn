@@ -9,9 +9,12 @@ import (
 	"os"
 	"strconv"
 	"sync"
+	"time"
 )
 
 func main() {
+	rand.Seed(time.Now().UnixNano())
+
 	if len(os.Args) != 3 {
 		fmt.Fprintln(os.Stderr, "Usage:", os.Args[0], "poems.json count")
 		os.Exit(1)
