@@ -28,7 +28,7 @@ func NewSession(m *Model) *Session {
 // The line will not include the final trailing newline,
 // but it may include intermediate newlines.
 func (s *Session) Query() string {
-	last := oneHot('\n')
+	last := OneHot('\n')
 	var res string
 	for {
 		next := s.runner.StepTime(last)
@@ -39,7 +39,7 @@ func (s *Session) Query() string {
 		if ch == '\n' && res != "" && res != "\n" {
 			break
 		}
-		last = oneHot(ch)
+		last = OneHot(ch)
 		res += string(ch)
 	}
 	return res
@@ -49,13 +49,14 @@ func (s *Session) Query() string {
 //
 // The line should not include a trailing newline.
 func (s *Session) Dictate(line string) {
-	s.runner.StepTime(oneHot('\n'))
+	s.runner.StepTime(OneHot('\n'))
 	for _, b := range []byte(line) {
-		s.runner.StepTime(oneHot(b))
+		s.runner.StepTime(OneHot(b))
 	}
 }
 
-func oneHot(b byte) linalg.Vector {
+// OneHot generates an input/output vector for a byte.
+func OneHot(b byte) linalg.Vector {
 	res := make(linalg.Vector, CharCount)
 	res[int(b)] = 1
 	return res
