@@ -3,12 +3,16 @@ package main
 import (
 	"flag"
 	"fmt"
+	"math/rand"
 	"os"
+	"time"
 
 	"github.com/unixpickle/poeturn/model"
 )
 
 func main() {
+	rand.Seed(time.Now().UnixNano())
+
 	var netStarts bool
 	var netFile string
 	flag.BoolVar(&netStarts, "netstart", false, "the network starts")
