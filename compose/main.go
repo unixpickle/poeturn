@@ -13,9 +13,9 @@ import (
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	var netStarts bool
+	var netStart int
 	var netFile string
-	flag.BoolVar(&netStarts, "netstart", false, "the network starts")
+	flag.IntVar(&netStart, "netstart", 0, "initial lines to generate")
 	flag.StringVar(&netFile, "network", "", "path to the network")
 
 	flag.Parse()
@@ -31,8 +31,9 @@ func main() {
 
 	sess := model.NewSession(net)
 
-	if netStarts {
+	for netStart > 0 {
 		fmt.Println(sess.Query())
+		netStart--
 	}
 	for {
 		sess.Dictate(readLine())

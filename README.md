@@ -74,3 +74,63 @@ Me wears that word where more excettion trudy.
 Die to the joy's eye Virtue?
 > Or live to the boy's pride a statue.
 ```
+
+Here's some poems I let the net write on its own:
+
+```
+Snow past the spirit blind befined,
+I didn't in the old roof world!
+the Walling of the valley,
+
+The sun is servingly, and by the borth
+Can find a living of the made hidverly
+Had fled, of wealth of silver winds
+Or a disery roff and opbisless?
+
+Both out if the wild-pounding scit.
+
+How maches back to kill that stone depress,
+Red clay whats could revell for words.
+```
+
+```
+So, my beats that I write she silent,
+To thee unhappy as blue-'disal
+The hills of the season may nirr
+Just wait his blood with the both may read
+a-weaffird human hast in the storm.
+only I told he plashes your door--pates, alad!
+Nor to his eyes when out of he is!
+He pursue the valiant futter bad doth in death,
+Because through marter-full contravious part,
+E'en makes unifout that you've find to guez,
+Leaving you alrost life . . . here was in
+:
+and he'll died -- the wail will be!"
+And . . . and repited Unsayl's" (While be still,
+Join' old words youth above the dere devantive.
+Sea-foundest found it some sweet painted,
+Sea made me growing guint escaped by;
+I demicing sickness of the feel's abtorted :
+I may not from the veil dread;
+With cod clear as a shell
+```
+
+```
+I'm just a school, my fear expine,
+Where I will not leap, my love,
+When one my keftless age,
+And seement you rest again,
+
+I must live my frazelly keen.'
+
+Wade, I enter we must be,
+Nor did reaches in hands
+That selflic eyes, and Death.
+
+'Tis mine own fire doth remember
+The secon must enchant;
+A cloudless name as they green'
+Let me thy heart the hurranest orient,
+Lest this are seen be bearned.
+```
