@@ -2,6 +2,41 @@
 
 It's your turn to be a poet. With poeturn, you and a recurrent neural network can take turns writing lines of a poem.
 
+# Usage
+
+First, you must install and configure [Go](https://golang.org/doc/install).
+
+Once you have Go, download this code as follows:
+
+```
+go get -d github.com/unixpickle/poeturn/...
+```
+
+Fetch poetry data as follows (saves to `/path/to/poems.json`):
+
+```
+$ cd $GOPATH/src/github.com/unixpickle/poeturn/fetch_data
+$ go run *.go /path/to/poems.json 1000
+```
+
+Train a network on the data as follows (saves network to `/path/to/network`):
+
+```
+$ cd $GOPATH/src/github.com/unixpickle/poeturn/
+$ go run *.go -samples /path/to/poems.json -output /path/to/network
+```
+
+You may press Ctrl+C exactly once to stop/pause training. Pressing it multiple times will terminate without saving. It is suggested that you train the network for a while (perhaps 24 hours). Of course, you may pause and resume training several times during this process.
+
+Once you have a trained network, you can compose a poem as follows:
+
+```
+$ cd $GOPATH/src/github.com/unixpickle/poeturn/compose
+$ go run *.go -network /path/to/network
+```
+
+When you see a `>`, it is a prompt asking you to enter a line. You can have the network start off writing `n` lines by adding `-netstart n` to the arguments.
+
 # Results
 
 Here are some "poems" I wrote with the help of this program. They seem to make just as much sense as regular poetry, if not more. Lines beginning with `>` were my contributions:
