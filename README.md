@@ -22,7 +22,7 @@ $ go run *.go /path/to/poems.json 1000
 Train a network on the data as follows (saves network to `/path/to/network`):
 
 ```
-$ cd $GOPATH/src/github.com/unixpickle/poeturn/
+$ cd $GOPATH/src/github.com/unixpickle/poeturn/train
 $ go run *.go -samples /path/to/poems.json -output /path/to/network
 ```
 
